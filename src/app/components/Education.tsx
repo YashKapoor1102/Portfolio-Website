@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import SchoolIcon from '@mui/icons-material/School';
+import BookIcon from '@mui/icons-material/Book';
 import Image from 'next/image';
 
 const Education: React.FC = () => {
@@ -35,12 +35,12 @@ const Education: React.FC = () => {
                     <Button 
                         variant="contained"
                         color="primary"
-                        href="/files/Record of Grades.pdf"
+                        href="/files/List of Courses.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        startIcon={<SchoolIcon />}
+                        startIcon={<BookIcon />}
                     >
-                        View Record of Grades
+                        View List of Courses
                     </Button>
 
                 </div>

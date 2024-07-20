@@ -1,3 +1,22 @@
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Card, CardContent, Typography, Chip } from '@mui/material';
+import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent } from '@mui/lab';
+
+
+interface Experience {
+  date: string;
+  company: string;
+  title: string;
+  skills: string[];
+  description: string[];
+}
+
+
+interface ExperienceItemProps {
+  exp: Experience;
+}
+
+
 const WorkExperience: React.FC = () => {
     const experiences = [
         {
@@ -36,43 +55,47 @@ const WorkExperience: React.FC = () => {
         }
     ]
     return (
-        <section id="WorkExperience" className="py-8 flex flex-col bg-gray-200">
-            <h1 className="text-2xl font-extrabold text-center mb-8 text-black">Work Experience</h1>
-            <div className="relative flex flex-col">
-                <div className="absolute w-1 bg-gray-300 h-full left-1/2 transform -translate-x-1/2"></div>
-                {experiences.map((exp, index) => (
-                    <div 
-                        key={index}
-                        className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? 'flex-row': 'flex-row-reverse'}`}
-                    >
-                    <div className="w-1/2 px-4">
-                        <div className="bg-white p-6 rounded-lg shadow-lg">
-                            <h2 className="text-xl font-bold">{exp.company}</h2>
-                            <h3 className="text-md text-gray-500 mb-4">{exp.title}</h3>
-                            <div className="flex flex-wrap mb-4">
-                                {exp.skills.map((skill, i) => (
-                                        <span key={i} className="m-1 px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">{skill}</span>
-                                ))}
-                            </div>
-                            {Array.isArray(exp.description) ? (
-                                <ul className="list-disc list-inside mt-2">
-                                    {exp.description.map((desc, i) => (
-                                        <li key={i} className="text-gray-700">{desc}</li>
-                                    ))}
-                                </ul>
-                            ) : (
-                                <p className="text-gray-700 mt-2">{exp.description}</p>
-                            )}
-                        </div>
-                    </div>
-                    <div className="w-1/2 px-4 text-center">
-                            <span className="inline-block py-2 px-4 bg-white text-gray-800 rounded shadow-lg">{exp.date}</span>
-                    </div>
-                </div>
-            ))}
-            </div>          
+        <section id="WorkExperience" className="py-8 bg-gray-200">
+            <div className="container mx-auto px-4">
+                <Typography variant="h4" component="h1" className="font-bold text-center mb-6">
+                    Work Experience
+                </Typography>
+                <Timeline position="right">
+                    {experiences.map((exp, index) => (
+                        <TimelineItem key={index}>
+                            <TimelineSeparator>
+                                <TimelineDot color="primary" />
+                                {index < experiences.length - 1 && <TimelineConnector />}
+                            </TimelineSeparator>
+                            <TimelineContent>
+
+                            <Card raised className="flex-grow">
+                                <CardContent>
+                                    <Typography variant="h6" className="font-bold">
+                                        {exp.title} <span className="font-normal text-sm">{exp.date}</span>
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" className="text-secondary">
+                                        {exp.company}
+                                    </Typography>
+                                    <div className="my-2.5">
+                                        {exp.skills.map((skill, i) => (
+                                            <Chip key={i} label={skill} size="small" className="m-0.5" />
+                                        ))}
+                                    </div>
+                                    <ul className="list-disc ml-4">
+                                        {exp.description.map((desc, i) => (
+                                            <li key={i} className="mt-1.5">{desc}</li>
+                                        ))}
+                                    </ul>
+                                </CardContent>
+                            </Card>
+                            </TimelineContent>
+                        </TimelineItem>
+                    ))}
+                </Timeline>
+            </div>
         </section>
     );
-}
+};
 
 export default WorkExperience;
