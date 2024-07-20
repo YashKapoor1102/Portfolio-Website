@@ -53,7 +53,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div id="ContactForm" className="flex justify-center items-center">
+        <div id="ContactForm" className="flex justify-center items-center bg-gray-100">
             <form action="https://formsubmit.co/yashkapooruni@gmail.com" 
                 method="POST"
                 onSubmit={handleSubmit} 

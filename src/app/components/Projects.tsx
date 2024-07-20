@@ -199,7 +199,7 @@ const Projects: React.FC = () => {
     }, []);
 
     return (
-        <section id="Projects" className="py-12 bg-gray-50">
+        <section id="Projects" className="py-12 bg-gray-100">
             <div className="container mx-auto px-6">
                 <h1 className="text-4xl font-extrabold text-center mb-10">My Projects</h1>
                 <div className="grid gap-12 lg:grid-cols-2">

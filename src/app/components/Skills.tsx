@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
     const tools = ['VSCode', 'Git', 'Jira', 'Confluence', 'MySQL Workbench', 'Postman', 'PowerShell', 'Webpack', 'IntelliJ', 'Eclipse', 'PyCharm','Linux', 'Makefile', 'XML'];
     
     return (
-        <section id="Skills" className="py-8 bg-gray-100">
+        <section id="Skills" className="py-8 bg-gray-50">
             <h1 className="text-3xl font-bold text-center mb-8">Skills</h1>
             <div className="container mx-auto px-4">
                 <div className="mb-8">

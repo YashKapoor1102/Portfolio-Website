@@ -3,18 +3,19 @@ import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import '../styles/custom.css';
 
 const Introduction: React.FC = () => {
     return (
-        <section className="flex flex-col items-center justify-center py-16 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+        <section className="flex flex-col items-center justify-center animated-gradient py-16 text-white h-screen">
             <img
-                src=""
+                src="/images/My Picture.png"
                 alt="Yash Kapoor"
-                className="w-32 h-32 rounded-full border-4 border-white shadow-lg"
+                className="w-52 h-52 rounded-full border-4 border-white shadow-lg"
             />
             <h1 className="mt-4 text-3xl font-bold">Hi there! I&apos;m Yash Kapoor</h1>
             <p className="mt-2 text-center max-w-xl mb-4">
-                I&apos;m a recent software engineering graduate from Carleton University in Ottawa, Ontario, Canada.
+                Software Engineering Graduate
             </p>
 
             <div className="max-w-screen-lg mx-auto flex justify-center space-x-4 mb-4">

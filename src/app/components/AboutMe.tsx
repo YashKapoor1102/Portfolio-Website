@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const AboutMe: React.FC = () => {
     const paragraphs = [
         <>
@@ -7,8 +8,8 @@ const AboutMe: React.FC = () => {
             with a passion for creating innovative and user-friendly applications.
         </>,
         <>
-            I am skilled in full-stack development with technologies like React, Node.js, Python, Java, C, and C++.<br />
-            I thrive on tackling new challenges and driving positive change.<br />
+            I am skilled in full-stack development with technologies like React, Node.js, Python, Java, C, and C++.
+            I thrive on tackling new challenges and driving positive change.
             If you&apos;d like to explore some of the projects I have worked on, feel free to check out my GitHub.
         </>,
         <>
@@ -23,9 +24,9 @@ const AboutMe: React.FC = () => {
     
     
     return (
-        <section id="AboutMe" className="py-8 flex flex-col items-center text-center bg-gray-100">
+        <section id="AboutMe" className="py-8 flex flex-col items-center text-center bg-gray-50">
             <h1 className="text-2xl font-extrabold mb-4 underline">About Me</h1>
-            <div className="max-w-1xl leading-relaxed">
+            <div className="max-w-xl w-full leading relaxed text-left">
                 {paragraphs.map((paragraph, index) => (
                     <p key={index} className="mb-4">
                         {paragraph}

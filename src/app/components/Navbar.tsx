@@ -7,20 +7,20 @@ const Navbar: React.FC = () => {
             <Link href="#AboutMe" legacyBehavior>
                 <a className="hover:text-gray-300">About Me</a>
             </Link>
-            <Link href="#ContactForm" legacyBehavior>
-                <a className="hover:text-gray-300">Contact</a>
-            </Link>
-            <Link href="#Education" legacyBehavior>
-                <a className="hover:text-gray-300">Education</a>
-            </Link>
-            <Link href="#Projects" legacyBehavior>
-                <a className="hover:text-gray-300">Projects</a>
+            <Link href="#WorkExperience" legacyBehavior>
+                <a className="hover:text-gray-300">Work Experience</a>
             </Link>
             <Link href="#Skills" legacyBehavior>
                 <a className="hover:text-gray-300">Skills</a>
             </Link>
-            <Link href="#WorkExperience" legacyBehavior>
-                <a className="hover:text-gray-300">Work Experience</a>
+            <Link href="#Projects" legacyBehavior>
+                <a className="hover:text-gray-300">Projects</a>
+            </Link>
+            <Link href="#Education" legacyBehavior>
+                <a className="hover:text-gray-300">Education</a>
+            </Link>
+            <Link href="#ContactForm" legacyBehavior>
+                <a className="hover:text-gray-300">Contact</a>
             </Link>
         </nav>
     );
