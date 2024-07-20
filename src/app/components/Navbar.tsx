@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="flex justify-around p-4 bg-gray-800 text-white">
+        <nav className="fixed top-0 w-full flex justify-around p-4 bg-gray-800 text-white z-50">
             <Link href="#AboutMe" legacyBehavior>
                 <a className="hover:text-gray-300">About Me</a>
             </Link>

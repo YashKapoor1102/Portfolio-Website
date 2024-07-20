@@ -7,6 +7,7 @@ import Skills from '../app/components/Skills';
 import Projects from '../app/components/Projects';
 import Education from '../app/components/Education';
 import ContactForm from '../app/components/ContactForm';
+import Footer from '../app/components/Footer';
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
             <Projects />
             <Education />
             <ContactForm />
+            <Footer />
         </div>
     );
 }

@@ -23,7 +23,7 @@ const Education: React.FC = () => {
                     </div>
 
                     <a 
-                        href="/grades/Record of Grades"
+                        href="/grades/Record of Grades.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className='px-4 py-2 bg-blue-500 text-white rounded shadow hover:bg-blue-700'
