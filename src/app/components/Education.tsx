@@ -35,7 +35,7 @@ const Education: React.FC = () => {
                     <Button 
                         variant="contained"
                         color="primary"
-                        href="/grades/Record of Grades.pdf"
+                        href="/files/Record of Grades.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         startIcon={<SchoolIcon />}
