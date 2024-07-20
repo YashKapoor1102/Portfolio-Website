@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface VideoModalProps {
     isOpen: boolean;
@@ -22,7 +23,7 @@ const Modal: React.FC<VideoModalProps> = ({isOpen, onClose, videoSrc, type}) => 
         <div className='fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center' onClick={handleClickOutside}>
             <div className='bg-white p-4 rounded-lg shadow-lg'>
                 {type === 'image' ? (
-                    <img src={videoSrc} alt="Image" width="800" height="450" />
+                    <Image src={videoSrc} alt="Image" width={800} height={450} />
                 ) : (
                     <video width="800" height="450" controls>
                         <source src={videoSrc} type="video/mp4" />

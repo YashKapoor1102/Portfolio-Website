@@ -4,7 +4,7 @@ import { useState } from "react";
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
@@ -55,7 +55,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div id="ContactForm" className="flex justify-center items-center bg-gray-100">
+        <div id="ContactForm" className="flex justify-center items-center bg-gray-200">
             <form action="https://formsubmit.co/yashkapooruni@gmail.com" 
                 method="POST"
                 onSubmit={handleSubmit} 

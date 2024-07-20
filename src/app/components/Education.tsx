@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import SchoolIcon from '@mui/icons-material/School';
+import Image from 'next/image';
 
 const Education: React.FC = () => {
     return (
@@ -9,7 +10,13 @@ const Education: React.FC = () => {
                 <h1 className="text-4xl font-extrabold text-center mb-10">Education</h1>
 
                 <div className="bg-white shadow-md text-center rounded-lg p-6">
-                    <img src={'/images/CarletonLogo.jpg'} alt="Carleton University" className="h-48 inline mb-4"/>
+                    <Image 
+                        src={'/images/CarletonLogo.jpg'} 
+                        alt="Carleton University"
+                        className="inline mb-4" 
+                        width={256} 
+                        height={192}
+                    />
                     <h2 className="text-2xl font-bold mb-1">Carleton University</h2>
                     <p className="text-lg text-gray-700 mb-4">Bachelor of Engineering in Software Engineering with Co-op</p>
                     <div className="mb-4">

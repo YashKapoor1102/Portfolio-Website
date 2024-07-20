@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Modal from "./Modal";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Button from '@mui/material/Button';
+import Image from 'next/image';
 
 const projects = [
     {
@@ -201,7 +202,7 @@ const Projects: React.FC = () => {
     }, []);
 
     return (
-        <section id="Projects" className="py-12 bg-gray-100">
+        <section id="Projects" className="py-12 bg-gray-200">
             <div className="container mx-auto px-6">
                 <h1 className="text-4xl font-extrabold text-center mb-10">My Projects</h1>
                 <div className="grid gap-12 lg:grid-cols-2">
@@ -213,7 +214,13 @@ const Projects: React.FC = () => {
                             <div className="flex-grow">
                                 <div className="relative h-96 cursor-pointer" onClick={() => openModal(project.demo, project.type)}>
                                     {project.type === 'image' ? (
-                                        <img className="absolute inset-0 w-full h-full object-contain" src={project.demo} alt="Image" width="800" height="450" />
+                                        <Image 
+                                            className="absolute inset-0 w-full h-full object-contain"
+                                            src={project.demo} 
+                                            alt="Image" 
+                                            width={800}
+                                            height={450}
+                                        />
                                     ) : (
                                         <video 
                                             ref={demoElement => { videoRefs.current[project.demo] = demoElement }}

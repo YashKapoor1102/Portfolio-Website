@@ -3,15 +3,18 @@ import IconButton from '@mui/material/IconButton';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Image from 'next/image';
 import '../styles/custom.css';
 
 const Introduction: React.FC = () => {
     return (
         <section className="flex flex-col items-center justify-center animated-gradient py-16 text-white h-screen">
-            <img
+            <Image
                 src="/images/My Picture.png"
                 alt="Yash Kapoor"
-                className="w-52 h-52 rounded-full border-4 border-white shadow-lg"
+                className="rounded-full border-4 border-white shadow-lg"
+                width={208} 
+                height={208}
             />
             <h1 className="mt-4 text-3xl font-bold">Hi there! I&apos;m Yash Kapoor</h1>
             <p className="mt-2 text-center max-w-xl mb-4">
