@@ -14,9 +14,11 @@
     "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
     "express": "^4.19.2",
+    "framer-motion": "^11.3.8",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.13.0"
   },
   "devDependencies": {
     "@types/node": "^20",

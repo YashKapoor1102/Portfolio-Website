@@ -2,6 +2,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Modal from "./Modal";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Button from '@mui/material/Button';
 
 const projects = [
     {
@@ -204,37 +206,51 @@ const Projects: React.FC = () => {
                 <h1 className="text-4xl font-extrabold text-center mb-10">My Projects</h1>
                 <div className="grid gap-12 lg:grid-cols-2">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                            <div className="relative h-96 cursor-pointer" onClick={() => openModal(project.demo, project.type)}>
-                                {project.type === 'image' ? (
-                                    <img className="absolute inset-0 w-full h-full object-contain" src={project.demo} alt="Image" width="800" height="450" />
-                                ) : (
-                                    <video 
-                                           ref={demoElement => { videoRefs.current[project.demo] = demoElement }}
-                                           className="absolute inset-0 w-full h-full object-contain" 
-                                           loop autoPlay muted
-                                    >
-                                        <source src={project.demo} type="video/mp4" />
-                                        Your browser doesn&apos;t support the video tag.
-                                    </video>
-                                )}
-                            </div>
-                            <div className="p-6">
-                                <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
-                                <div className="flex flex-wrap mb-4">
-                                    {project.technologies.map((tech, i) => (
-                                        <span key={i} className="m-1 px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">{tech}</span>
-                                    ))}
+                        <div 
+                            key={index} 
+                            className="flex flex-col justify-between bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+                        >
+                            <div className="flex-grow">
+                                <div className="relative h-96 cursor-pointer" onClick={() => openModal(project.demo, project.type)}>
+                                    {project.type === 'image' ? (
+                                        <img className="absolute inset-0 w-full h-full object-contain" src={project.demo} alt="Image" width="800" height="450" />
+                                    ) : (
+                                        <video 
+                                            ref={demoElement => { videoRefs.current[project.demo] = demoElement }}
+                                            className="absolute inset-0 w-full h-full object-contain" 
+                                            loop autoPlay muted
+                                        >
+                                            <source src={project.demo} type="video/mp4" />
+                                            Your browser doesn&apos;t support the video tag.
+                                        </video>
+                                    )}
                                 </div>
-                                <ul className="list-disc list-inside mb-4">
-                                    {project.description.map((desc, i) => (
-                                        <li key={i} className="text-gray-700">{desc}</li>
-                                    ))}
-                                </ul>
-                                <a href={`https://github.com/${project.url}`} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700">
-                                    View on GitHub
-                                </a>
+                                <div className="p-6">
+                                    <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
+                                    <div className="flex flex-wrap mb-4">
+                                        {project.technologies.map((tech, i) => (
+                                            <span key={i} className="m-1 px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">{tech}</span>
+                                        ))}
+                                    </div>
+                                    <ul className="list-disc list-inside mb-4">
+                                        {project.description.map((desc, i) => (
+                                            <li key={i} className="text-gray-700">{desc}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                startIcon={<GitHubIcon />}
+                                href={`https://github.com/${project.url}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="max-w-xs"
+                            >
+                                View on GitHub
+                            </Button>
+
                         </div>
                     ))}
                 </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '@mui/material/Button';
+import SchoolIcon from '@mui/icons-material/School';
 
 const Education: React.FC = () => {
     return (
@@ -7,6 +9,7 @@ const Education: React.FC = () => {
                 <h1 className="text-4xl font-extrabold text-center mb-10">Education</h1>
 
                 <div className="bg-white shadow-md text-center rounded-lg p-6">
+                    <img src={'/images/CarletonLogo.jpg'} alt="Carleton University" className="h-48 inline mb-4"/>
                     <h2 className="text-2xl font-bold mb-1">Carleton University</h2>
                     <p className="text-lg text-gray-700 mb-4">Bachelor of Engineering in Software Engineering with Co-op</p>
                     <div className="mb-4">
@@ -22,14 +25,16 @@ const Education: React.FC = () => {
                         
                     </div>
 
-                    <a 
+                    <Button 
+                        variant="contained"
+                        color="primary"
                         href="/grades/Record of Grades.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='px-4 py-2 bg-blue-500 text-white rounded shadow hover:bg-blue-700'
+                        startIcon={<SchoolIcon />}
                     >
                         View Record of Grades
-                    </a>
+                    </Button>
 
                 </div>
 

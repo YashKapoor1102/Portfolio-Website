@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 const ContactForm = () => {
     const [email, setEmail] = useState('');
@@ -67,26 +69,29 @@ const ContactForm = () => {
                     className="w-full p-2 my-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 <textarea name="message" placeholder="Your message" value={message} onChange={(e) => setMessage(e.target.value)} 
                     className="w-full p-2 my-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                <button 
-                    type="submit" 
-                    className="p-2 text-white bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                <Button
+                    type="submit"
+                    variant="contained"
+                    color="primary"
+                    disabled={loading}
+                    endIcon={<SendIcon />}
+                    className="mb-4"
                 >
                     Send Message
-                </button>
+                </Button>
                 {loading && (
                     <div className="flex justify-center p-4 items-center">
                         <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-500"></div>
                     </div>
                 )}
                 {error && <div className="text-red-500 font-bold text-center mt-2 p-4">{error}</div>}
-            </form>
-            {submitted && !loading &&  (
-                <div className="text-center p-4 text-blue-500">
+                {submitted && !loading &&  (
+                <div className="text-center text-blue-500">
                     Thank you for sending your message. I have received it and will get back to you shortly!
                 </div>
-            )}
+                )}
+            </form>
         </div>
-
     );
 }
 

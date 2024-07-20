@@ -18,7 +18,7 @@ const WorkExperience: React.FC = () => {
                 'Led the implementation of unit and integration tests across the codebase, achieving 100% test coverage using Jest and React Testing Library, which significantly enhanced reliability and usability.',
                 'Engineered and deployed RESTful APIs within a microservices architecture using Docker and Kubernetes, improving system scalability and reducing deployment times by 30%.',
                 'Automated ticket data processing and archiving workflows using cron jobs scheduled through GCP Cloud Scheduler, minimizing manual intervention and optimizing data management processes.',
-                'Led the implementation of Ingest and Logstash pipelines, enhancing data collection and processing workflows.',
+                'Spearheaded the implementation of Ingest and Logstash pipelines, enhancing data collection and processing workflows.',
                 'Gained hands-on experience with AWS S3 by managing, storing, and retrieving images in S3 buckets.'
             ]
         },

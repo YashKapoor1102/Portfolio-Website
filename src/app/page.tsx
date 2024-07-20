@@ -8,18 +8,38 @@ import Projects from '../app/components/Projects';
 import Education from '../app/components/Education';
 import ContactForm from '../app/components/ContactForm';
 import Footer from '../app/components/Footer';
+import FadeInWhenVisible from './components/FadeInWhenVisible';
 
 export default function Home() {
     return (
         <div>
             <Navbar />
             <Introduction />
-            <AboutMe />
-            <WorkExperience />
-            <Skills />
-            <Projects />
-            <Education />
-            <ContactForm />
+
+            <FadeInWhenVisible>
+                <AboutMe />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+                <WorkExperience />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+                <Skills />
+            </FadeInWhenVisible>
+  
+            <FadeInWhenVisible>
+                <Projects />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+                <Education />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible>
+                <ContactForm />
+            </FadeInWhenVisible>
+
             <Footer />
         </div>
     );
