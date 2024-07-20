@@ -37,7 +37,7 @@ const WorkExperience: React.FC = () => {
     ]
     return (
         <section id="WorkExperience" className="py-8 flex flex-col bg-gray-200">
-            <h1 className="text-2xl font-extrabold text-center mb-8">Work Experience</h1>
+            <h1 className="text-2xl font-extrabold text-center mb-8 text-black">Work Experience</h1>
             <div className="relative flex flex-col">
                 <div className="absolute w-1 bg-gray-300 h-full left-1/2 transform -translate-x-1/2"></div>
                 {experiences.map((exp, index) => (

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Education: React.FC = () => {
     return (
-        <section id="Education" className="py-12 flex flex-col justify-center items-center bg-gray-50">
+        <section id="Education" className="py-12 flex flex-col justify-center items-center bg-gray-50 text-black">
 
                 <h1 className="text-4xl font-extrabold text-center mb-10">Education</h1>
 

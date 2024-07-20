@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
     }
 
     return (
-        <div id="ContactForm" className="flex justify-center items-center bg-gray-200">
+        <div id="ContactForm" className="flex justify-center items-center bg-gray-200 text-black">
             <form action="https://formsubmit.co/yashkapooruni@gmail.com" 
                 method="POST"
                 onSubmit={handleSubmit} 
