@@ -20,7 +20,7 @@ const AboutMe = () => {
   return (
     <section id="AboutMe" className="py-8 flex flex-col items-center text-center bg-gray-50">
       <h1 className="text-2xl font-extrabold mb-4 underline text-black">About Me</h1>
-      <div className="max-w-xl w-full leading-relaxed text-left">
+      <div className="max-w-xl w-full leading-relaxed text-left px-4">
         {content.map((text, index) => (
           <p key={index} className="mb-4 text-black">{text}</p>
         ))}
