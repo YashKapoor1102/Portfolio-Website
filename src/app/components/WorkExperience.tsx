@@ -42,10 +42,10 @@ const WorkExperience: React.FC = () => {
                 <h1 className="text-center text-4xl font-bold mb-6">Work Experience</h1>
                 <div className="space-y-4 flex flex-col justify-center items-center">
                     {experiences.map((exp, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-md p-6 max-w-4xl">
+                        <div key={index} className="bg-blue-50 rounded-lg shadow-md p-6 max-w-4xl border border-blue-700">
                             <span className="text-sm font-normal">{exp.date}</span>
                             <h2 className="text-lg font-bold">{exp.title}</h2>
-                            <p className="text-blue-600">{exp.company}</p>
+                            <p className="font-bold text-blue-700">{exp.company}</p>
                             <div className="flex flex-wrap gap-2 my-2">
                                 {exp.skills.map((skill, i) => (
                                     <span key={i} className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">{skill}</span>

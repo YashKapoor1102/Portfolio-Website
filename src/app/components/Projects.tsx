@@ -232,7 +232,7 @@ const Projects: React.FC = () => {
                                         </video>
                                     )}
                                 </div>
-                                <div className="p-6">
+                                <div className="p-4">
                                     <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
                                     <div className="flex flex-wrap mb-4">
                                         {project.technologies.map((tech, i) => (
@@ -246,18 +246,19 @@ const Projects: React.FC = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                startIcon={<GitHubIcon />}
-                                href={`https://github.com/${project.url}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="max-w-xs"
-                            >
-                                View on GitHub
-                            </Button>
-
+                            <div className="flex flex-col justify-center items-center mb-4">
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    startIcon={<GitHubIcon />}
+                                    href={`https://github.com/${project.url}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="max-w-xs"
+                                >
+                                    View on GitHub
+                                </Button>
+                            </div>
                         </div>
                     ))}
                 </div>
