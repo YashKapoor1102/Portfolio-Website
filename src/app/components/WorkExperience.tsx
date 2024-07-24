@@ -1,22 +1,3 @@
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import { Card, CardContent, Typography, Chip } from '@mui/material';
-import { Timeline, TimelineItem, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent } from '@mui/lab';
-
-
-interface Experience {
-  date: string;
-  company: string;
-  title: string;
-  skills: string[];
-  description: string[];
-}
-
-
-interface ExperienceItemProps {
-  exp: Experience;
-}
-
-
 const WorkExperience: React.FC = () => {
     const experiences = [
         {
@@ -54,45 +35,30 @@ const WorkExperience: React.FC = () => {
             ]
         }
     ]
+
     return (
         <section id="WorkExperience" className="py-8 bg-gray-200">
             <div className="container mx-auto px-4">
-                <Typography variant="h4" component="h1" className="font-bold text-center mb-6">
-                    Work Experience
-                </Typography>
-                <Timeline position="right">
+                <h1 className="text-center text-4xl font-bold mb-6">Work Experience</h1>
+                <div className="space-y-4 flex flex-col justify-center items-center">
                     {experiences.map((exp, index) => (
-                        <TimelineItem key={index}>
-                            <TimelineSeparator>
-                                <TimelineDot color="primary" />
-                                {index < experiences.length - 1 && <TimelineConnector />}
-                            </TimelineSeparator>
-                            <TimelineContent>
-
-                            <Card raised className="flex-grow">
-                                <CardContent>
-                                    <Typography variant="h6" className="font-bold">
-                                        {exp.title} <span className="font-normal text-sm">{exp.date}</span>
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" className="text-secondary">
-                                        {exp.company}
-                                    </Typography>
-                                    <div className="my-2.5">
-                                        {exp.skills.map((skill, i) => (
-                                            <Chip key={i} label={skill} size="small" className="m-0.5" />
-                                        ))}
-                                    </div>
-                                    <ul className="list-disc ml-4">
-                                        {exp.description.map((desc, i) => (
-                                            <li key={i} className="mt-1.5">{desc}</li>
-                                        ))}
-                                    </ul>
-                                </CardContent>
-                            </Card>
-                            </TimelineContent>
-                        </TimelineItem>
+                        <div key={index} className="bg-white rounded-lg shadow-md p-6 max-w-4xl">
+                            <span className="text-sm font-normal">{exp.date}</span>
+                            <h2 className="text-lg font-bold">{exp.title}</h2>
+                            <p className="text-blue-600">{exp.company}</p>
+                            <div className="flex flex-wrap gap-2 my-2">
+                                {exp.skills.map((skill, i) => (
+                                    <span key={i} className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">{skill}</span>
+                                ))}
+                            </div>
+                            <ul className="list-disc pl-5 space-y-1">
+                                {exp.description.map((desc, i) => (
+                                    <li key={i}>{desc}</li>
+                                ))}
+                            </ul>
+                        </div>
                     ))}
-                </Timeline>
+                </div>
             </div>
         </section>
     );
