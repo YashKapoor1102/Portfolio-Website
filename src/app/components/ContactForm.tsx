@@ -56,11 +56,11 @@ const ContactForm: React.FC = () => {
 
     return (
         <div id="ContactForm" className="flex justify-center items-center bg-gray-200 text-black ">
-            <div className="my-4">
+            <div className="m-4">
                 <form action="https://formsubmit.co/yashkapooruni@gmail.com" 
                     method="POST"
                     onSubmit={handleSubmit} 
-                    className=" p-6 bg-white rounded-lg shadow-xl"
+                    className="p-6 bg-white rounded-lg shadow-xl"
                 >
                     <h1 className="text-2xl font-extrabold text-center">Get In Touch!</h1>
                     <input type="hidden" name="_captcha" value="false"/>

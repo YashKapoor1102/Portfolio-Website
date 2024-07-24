@@ -31,7 +31,7 @@ const ScrollToTopButton: React.FC = () => {
             {isVisible && (
                 <div className='rounded-full bg-blue-500 hover:bg-blue-600'>
                 <IconButton onClick={scrollToTop} color="inherit" className="hover:text-blue-300">
-                    <ArrowUpwardIcon fontSize="large"/>
+                    <ArrowUpwardIcon fontSize="medium"/>
                 </IconButton>
             </div>
             )}

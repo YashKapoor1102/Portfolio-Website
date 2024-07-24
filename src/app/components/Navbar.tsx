@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <nav className={`fixed top-0 w-full flex justify-around ${!isNarrowScreen ? 'p-4' : 'p-0'} p-4 bg-gray-800 text-white z-50`}>
+        <nav className={`fixed top-0 w-full flex justify-around ${!isNarrowScreen ? 'p-4' : 'p-0'} bg-gray-800 text-white z-50`}>
             <div className={`flex justify-between w-full ${!isNarrowScreen ? 'px-16' : ''}`}>
                 {!isNarrowScreen ? renderNavLinks() : (
                     <IconButton onClick={() => setMenuOpen(!menuOpen)} color="inherit">

@@ -9,7 +9,7 @@ const Education: React.FC = () => {
 
                 <h1 className="text-4xl font-extrabold text-center mb-10">Education</h1>
 
-                <div className="bg-white shadow-md text-center rounded-lg p-6">
+                <div className="bg-white shadow-md text-center rounded-lg p-6 mx-5">
                     <Image 
                         src={'/images/CarletonLogo.jpg'} 
                         alt="Carleton University"
