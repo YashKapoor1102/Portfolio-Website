@@ -9,6 +9,7 @@ import Education from '../app/components/Education';
 import ContactForm from '../app/components/ContactForm';
 import Footer from '../app/components/Footer';
 import FadeInWhenVisible from './components/FadeInWhenVisible';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 export default function Home() {
     return (
@@ -41,6 +42,8 @@ export default function Home() {
             </FadeInWhenVisible>
 
             <Footer />
+            <ScrollToTopButton />
+
         </div>
     );
 }
