@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills: React.FC = () => {
     const programmingLanguages = ['Python', 'Java', 'C', 'C++', 'JavaScript', 'TypeScript', 'Bash', 'Racket', 'SQL', 'PHP'];
-    const frontendTechnologies = ['HTML/CSS', 'Angular', 'React', 'Bootstrap'];
+    const frontendTechnologies = ['HTML/CSS', 'Angular', 'React', 'Bootstrap', 'Next.js'];
     const backendTechnologies = ['Node.js', 'Express.js', 'Spring', 'MySQL'];
     const cloudPlatforms = ['Amazon Web Services (AWS)', 'Google Cloud Platform (GCP)', 'Azure'];
     const devOpsTechnologies = ['Docker', 'CI/CD', 'Selenium', 'Elasticsearch', 'Logstash', 'Kibana'];
