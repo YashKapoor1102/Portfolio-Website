@@ -10,10 +10,12 @@ import ContactForm from '../app/components/ContactForm';
 import Footer from '../app/components/Footer';
 import FadeInWhenVisible from './components/FadeInWhenVisible';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
     return (
         <div>
+            <Analytics />
             <Navbar />
             <Introduction />
 
