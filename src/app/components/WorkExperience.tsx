@@ -116,7 +116,7 @@ const WorkExperience: React.FC = () => {
                                             {openTab.includes(`${exp.company}-${category}`) && (
                                                 <div className="p-4 bg-blue-100">
                                                     <ul className="list-disc pl-6 mt-2">
-                                                        {exp.categories[category].map((item, j) => (
+                                                        {exp.categories[category as keyof typeof exp.categories].map((item, j) => (
                                                             <li key={j} className='text-gray-800 mb-4'>
                                                                 {item}
                                                             </li>
