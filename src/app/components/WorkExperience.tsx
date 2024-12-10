@@ -47,7 +47,7 @@ const WorkExperience: React.FC = () => {
 
                 'Full-Stack Development': [
                     'Redesigned the status configuration screen to sync Barracuda SKOUT XDR and ConnectWise ticket statuses. Developed the frontend user interface using React and backend logic with HTTP request libraries to automate status updates via the ConnectWise API.',
-                    "Generated anonymized demo data for the Customer Security Dashboard by fetching key datasets from external APIs and querying Elasticsearch to retrieve relevant data. Automated data generation scheduling with JavaScript to provide sales engineers with continuously refreshed data for secure and effective demonstrations."
+                    "Generated anonymized demo data for the Customer Security Dashboard by fetching key datasets from external APIs and querying Elasticsearch to retrieve relevant data. Automated data generation scheduling using cron jobs with Node.js to provide sales engineers with continuously refreshed data for secure and effective demonstrations."
                 ],
 
                 'Testing & Quality Assurance': [
