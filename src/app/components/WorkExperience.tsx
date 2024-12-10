@@ -50,11 +50,6 @@ const WorkExperience: React.FC = () => {
                     "Generated anonymized demo data for the Customer Security Dashboard by fetching key datasets from external APIs and querying Elasticsearch to retrieve relevant data. Automated data generation scheduling with JavaScript to provide sales engineers with continuously refreshed data for secure and effective demonstrations."
                 ],
 
-                'Teamwork & Agile Practices': [
-                    'Engaged in three-week sprints, involving daily stand-up meetings, utilization of Jira and Confluence, and delivering demo presentations.',
-                    'Effectively collaborated with cross-functional teams in an Agile (SCRUM) environment to guarantee timely and efficient delivery of high-quality software products.',
-                ],
-
                 'Testing & Quality Assurance': [
                     'Led the implementation of unit, integration, and regression tests across the codebase, achieving 100% test coverage using Jest and React Testing Library. Integrated these tests into the CI/CD pipeline, ensuring continuous validation and significantly enhancing reliability and usability.'
                 ],
@@ -62,7 +57,12 @@ const WorkExperience: React.FC = () => {
                 'Content Management & Skill Development': [
                     'Managed and updated integration descriptions, images, and logos on the integrations page of the Customer Security Dashboard using a Content Management System (CMS), ensuring accurate and visually consistent content representation.',
                     'Completed a UDemy course on TypeScript, JavaScript, React, Redux, and Node.js to enhance development skills.',
-                ]
+                ],
+
+                'Teamwork & Agile Practices': [
+                    'Engaged in three-week sprints, involving daily stand-up meetings, utilization of Jira and Confluence, and delivering demo presentations.',
+                    'Effectively collaborated with cross-functional teams in an Agile (SCRUM) environment to guarantee timely and efficient delivery of high-quality software products.',
+                ],
             }
         },
         {
