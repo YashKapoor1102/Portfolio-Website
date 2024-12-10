@@ -28,7 +28,7 @@ const WorkExperience: React.FC = () => {
             categories: {
                 'Key Accomplishments': [
                     'Developed an optimized ticket management system for managed service providers using React, Node.js, and Elasticsearch, resulting in a 33% increase in operational efficiency and a 20% improvement in data consistency.',
-                    "Enhanced the customer security dashboard by integrating SentinelOne's API to update endpoint security policy names. Tested with Postman and implemented secure backend calls using JavaScript libraries like Axios.",
+                    "Enhanced the Customer Security Dashboard using React and Node.js by integrating SentinelOne's API to update endpoint security policy names. Implemented secure backend calls with JavaScript libraries like Axios, tested the integration with Postman, and updated the frontend to display the changes dynamically.",
                     'Designed and implemented a new setup screen for Sophos Central Integration using React, enabling users to configure and validate API credentials directly with the Sophos Central API. Integrated secure backend storage in Elasticsearch, improving usability, automating setup, and streamlining the integration process.',
                     'Engineered and deployed RESTful APIs within a microservices architecture using Docker and Kubernetes, improving system scalability and reducing deployment times by 30%.',
                 ],
@@ -40,13 +40,15 @@ const WorkExperience: React.FC = () => {
                 ],
 
                 'Backend Development': [
+                    'Reviewed and updated the entire codebase to align HTTP status codes with RESTful standards, improving API reliability and developer experience.',
                     'Spearheaded the implementation of Ingest and Logstash pipelines, enhancing data collection and processing workflows.',
                     'Gained hands-on experience with AWS S3 by managing, storing, and retrieving images in S3 buckets.',
+                    'Improved the reliability of the CloudTrail feature in the Customer Security Dashboard by leveraging AWS S3, AWS Simple Notification Service, and AWS CloudTrail to ensure accurate data retrieval. Designed user alerts for missing events, developed unit tests with Jest, and enhanced functionality using Axios and Fetch API.',
                     'Automated ticket data processing and archiving workflows using cron jobs scheduled through GCP Cloud Scheduler, minimizing manual intervention and optimizing data management processes.',
                 ],
 
                 'Full-Stack Development': [
-                    'Redesigned the status configuration screen to sync Barracuda SKOUT XDR and ConnectWise ticket statuses. Developed the frontend user interface using React and backend logic with HTTP request libraries to automate status updates via the ConnectWise API.',
+                    'Redesigned the status configuration screen in the Customer Security Dashboard to sync Barracuda SKOUT XDR and ConnectWise ticket statuses. Developed the frontend user interface using React and backend logic with HTTP request libraries to automate status updates via the ConnectWise API.',
                     "Generated anonymized demo data for the Customer Security Dashboard by fetching key datasets from external APIs and querying Elasticsearch to retrieve relevant data. Automated data generation scheduling using cron jobs with Node.js to provide sales engineers with continuously refreshed data for secure and effective demonstrations."
                 ],
 
