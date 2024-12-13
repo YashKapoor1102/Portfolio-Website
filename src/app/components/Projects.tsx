@@ -225,7 +225,12 @@ const Projects: React.FC = () => {
                                         <video 
                                             ref={demoElement => { videoRefs.current[project.demo] = demoElement }}
                                             className="absolute inset-0 w-full h-full object-contain" 
-                                            loop autoPlay muted
+                                            loop
+                                            autoPlay 
+                                            muted 
+                                            playsInline 
+                                            webkit-playsinline="true"
+                                            controlsList="nodownload"
                                         >
                                             <source src={project.demo} type="video/mp4" />
                                             Your browser doesn&apos;t support the video tag.
