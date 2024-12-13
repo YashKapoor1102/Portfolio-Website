@@ -5,22 +5,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/MoreVert';
 
 const Navbar: React.FC = () => {
-    const [isNarrowScreen, setIsNarrowScreen] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    useEffect(() => {
-        const checkScreenSize = () => {
-            setIsNarrowScreen(window.innerWidth < 770);
-        };
-
-        checkScreenSize();
-        window.addEventListener('resize', checkScreenSize);
-
-        return () => {
-            window.removeEventListener('resize', checkScreenSize);
-        };
-    }, []);
-
+    const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     const handleScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, targetId: string) => {
         event.preventDefault();
@@ -78,26 +63,24 @@ const Navbar: React.FC = () => {
                 
             </>
 
-        )
-        
+        )   
     }
 
     return (
-        <nav className={`fixed top-0 w-full flex justify-around ${!isNarrowScreen ? 'p-4' : 'p-0'} bg-gray-800 text-white z-50`}>
-            <div className={`flex justify-between w-full ${!isNarrowScreen ? 'px-16' : ''}`}>
-                {!isNarrowScreen ? renderNavLinks() : (
-                    <IconButton onClick={() => setMenuOpen(!menuOpen)} color="inherit">
-                        <MenuIcon />
-                    </IconButton>
-                )}
+        <nav className="navbar">
+            <div className="nav-links">
+                {renderNavLinks()}
             </div>
-            { isNarrowScreen && menuOpen && (
-                <div className="flex flex-col items-center bg-gray-800 w-full absolute top-full left-0 space-y-4">
-                    {renderNavLinks()}
-                    <br />
-                </div>
-            )}
-            
+
+            <div className="hamburger-menu">
+                <IconButton onClick={() => setMenuOpen(!menuOpen)} color="inherit">
+                    <MenuIcon />
+                </IconButton>
+            </div>
+
+            <div className={`mobile-menu ${menuOpen ? 'active' : ''}`}>
+                {renderNavLinks()}
+            </div>
         </nav>
     );
 };
