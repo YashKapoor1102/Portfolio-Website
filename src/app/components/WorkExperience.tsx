@@ -28,42 +28,39 @@ const WorkExperience: React.FC = () => {
             categories: {
                 'Key Accomplishments': [
                     'Developed an optimized ticket management system for managed service providers using React, Node.js, and Elasticsearch, resulting in a 33% increase in operational efficiency and a 20% improvement in data consistency.',
-                    "Enhanced the Customer Security Dashboard using React and Node.js by integrating SentinelOne's API to update endpoint security policy names. Implemented secure backend calls with JavaScript libraries like Axios, tested the integration with Postman, and updated the frontend to display the changes dynamically.",
-                    'Designed and implemented a new setup screen for Sophos Central Integration using React, enabling users to configure and validate API credentials directly with the Sophos Central API. Integrated secure backend storage in Elasticsearch, improving usability, automating setup, and streamlining the integration process.',
+                    'Designed and developed a breadcrumb navigation system using React, Redux, Node.js, and CSS, improving user experience by making navigation intuitive and visually consistent across pages.',
+                    'Designed and implemented a setup screen for Sophos Central Integration in the dashboard using React and Node.js, enabling users to configure and validate API credentials directly with the Sophos Central API. Integrated secure backend storage in Elasticsearch, improving usability, automating setup, and streamlining the integration process.',
                     'Engineered and deployed RESTful APIs within a microservices architecture using Docker and Kubernetes, improving system scalability and reducing deployment times by 30%.',
+                    'Redesigned the status configuration screen in the Customer Security Dashboard to sync Barracuda SKOUT XDR and ConnectWise ticket statuses. Developed the frontend user interface using React and backend logic with HTTP request libraries to automate status updates via the ConnectWise API.',
                 ],
 
-                'Frontend Development': [
-                    'Addressed timeout issues by implementing dynamic search functionality for ConnectWise company names using React hooks and advanced JavaScript concepts, improving usability and performance.',
+                'Technical Expertise': [
+                    'Built dynamic search functionality for ConnectWise company name lookups using React hooks and JavaScript, improving usability and performance.',
                     'Implemented and tested responsive layouts using CSS media queries, ensuring the dashboard delivered a seamless user experience across devices, improving accessibility for users on mobile and desktop platforms.',
-                    'Designed and developed a breadcrumb navigation system using React, Redux, and CSS, improving user experience by making navigation intuitive and visually consistent across pages.',
+                    'Reviewed and updated the entire codebase to align HTTP status codes with RESTful standards, improving API reliability and developer experience.',
+                    "Enhanced the Customer Security Dashboard using React and Node.js by integrating SentinelOne's API to update endpoint security policy names. Implemented secure backend calls with JavaScript libraries like Axios, tested the integration with Postman, and updated the frontend to display the changes dynamically.",
+                    "Generated anonymized demo data for the Customer Security Dashboard by fetching key datasets from external APIs and querying Elasticsearch to retrieve relevant data. Automated data generation scheduling using cron jobs with Node.js to provide sales engineers with continuously refreshed data for secure and effective demonstrations.",
                 ],
 
-                'Backend Development': [
-                    'Reviewed and updated the entire codebase to align HTTP status codes with RESTful standards, improving API reliability and developer experience.',
-                    'Spearheaded the implementation of Ingest and Logstash pipelines, enhancing data collection and processing workflows.',
+                'DevOps & Cloud': [
+                    'Led the implementation of Ingest and Logstash pipelines, enhancing data collection and processing workflows.',
                     'Gained hands-on experience with AWS S3 by managing, storing, and retrieving images in S3 buckets.',
                     'Improved the reliability of the CloudTrail feature in the Customer Security Dashboard by leveraging AWS S3, AWS Simple Notification Service, and AWS CloudTrail to ensure accurate data retrieval. Designed user alerts for missing events, developed unit tests with Jest, and enhanced functionality using Axios and Fetch API.',
                     'Automated ticket data processing and archiving workflows using cron jobs scheduled through GCP Cloud Scheduler, minimizing manual intervention and optimizing data management processes.',
                 ],
 
-                'Full-Stack Development': [
-                    'Redesigned the status configuration screen in the Customer Security Dashboard to sync Barracuda SKOUT XDR and ConnectWise ticket statuses. Developed the frontend user interface using React and backend logic with HTTP request libraries to automate status updates via the ConnectWise API.',
-                    "Generated anonymized demo data for the Customer Security Dashboard by fetching key datasets from external APIs and querying Elasticsearch to retrieve relevant data. Automated data generation scheduling using cron jobs with Node.js to provide sales engineers with continuously refreshed data for secure and effective demonstrations."
-                ],
-
                 'Testing & Quality Assurance': [
-                    'Led the implementation of unit, integration, and regression tests across the codebase, achieving 100% test coverage using Jest and React Testing Library. Integrated these tests into the CI/CD pipeline, ensuring continuous validation and significantly enhancing reliability and usability.'
+                    'Spearheaded the implementation of unit, integration, and regression tests across the codebase, achieving 100% test coverage using Jest and React Testing Library. Integrated these tests into the CI/CD pipeline, ensuring continuous validation and significantly enhancing reliability and usability.'
                 ],
 
-                'Content Management & Skill Development': [
+                'Content Management & Professional Development': [
                     'Managed and updated integration descriptions, images, and logos on the integrations page of the Customer Security Dashboard using a Content Management System (CMS), ensuring accurate and visually consistent content representation.',
                     'Completed a UDemy course on TypeScript, JavaScript, React, Redux, and Node.js to enhance development skills.',
                 ],
 
                 'Teamwork & Agile Practices': [
-                    'Engaged in three-week sprints, involving daily stand-up meetings, utilization of Jira and Confluence, and delivering demo presentations.',
-                    'Effectively collaborated with cross-functional teams in an Agile (SCRUM) environment to guarantee timely and efficient delivery of high-quality software products.',
+                    'Collaborated effectively in Agile SCRUM teams, contributing to three-week sprints, daily stand-ups, and delivering impactful demo presentations.',
+                    'Utilized Git for version control and Jira for project tracking and task management, while leveraging Confluence for documentation and team collaboration, ensuring the timely delivery of high-quality software solutions.'
                 ],
             }
         },
