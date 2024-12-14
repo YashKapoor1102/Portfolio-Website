@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect } from 'react';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/MoreVert';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
