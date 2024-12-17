@@ -50,7 +50,7 @@ const WorkExperience: React.FC = () => {
                 ],
 
                 'Testing & Quality Assurance': [
-                    'Spearheaded the implementation of unit, integration, and regression tests across the codebase, achieving 100% test coverage using Jest and React Testing Library. Integrated these tests into the CI/CD pipeline, ensuring continuous validation and significantly enhancing reliability and usability.'
+                    'Spearheaded the implementation of unit, integration, functional, and regression tests across the codebase, achieving 100% test coverage using Jest and React Testing Library. Integrated these tests into the CI/CD pipeline, ensuring continuous validation and significantly enhancing reliability and usability.'
                 ],
 
                 'Content Management & Professional Development': [
