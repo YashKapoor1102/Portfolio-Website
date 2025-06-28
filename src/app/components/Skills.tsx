@@ -3,10 +3,10 @@ import React from 'react';
 const Skills: React.FC = () => {
     const programmingLanguages = ['Python', 'Java', 'C', 'C#', 'C++', 'JavaScript', 'TypeScript', 'Bash', 'Racket', 'SQL', 'PHP'];
     const frontendTechnologies = ['HTML/CSS', 'Angular', 'React', 'Bootstrap', 'Next.js'];
-    const backendTechnologies = ['Node.js', 'Express.js', 'Spring', 'MySQL'];
+    const backendTechnologies = ['Node.js', 'Express.js', 'Spring', 'MySQL', 'Microsoft SQL Server', 'REST APIs', 'Palantir Foundry', 'PySpark'];
     const cloudPlatforms = ['Amazon Web Services (AWS)', 'Google Cloud Platform (GCP)', 'Azure'];
     const devOpsTechnologies = ['Docker', 'CI/CD', 'Selenium', 'Elasticsearch', 'Logstash', 'Kibana'];
-    const testingFrameworks = ['JUnit', 'Pytest', 'Jest', 'React Testing Library'];
+    const testingFrameworks = ['JUnit', 'Pytest', 'Jest', 'React Testing Library', 'React Native Testing Library'];
     const tools = ['VSCode', 'Git', 'Jira', 'Confluence', 'MySQL Workbench', 'Postman', 'PowerShell', 'Webpack', 'IntelliJ', 'Eclipse', 'PyCharm','Linux', 'Makefile', 'XML'];
     
     return (

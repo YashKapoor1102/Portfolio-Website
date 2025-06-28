@@ -18,7 +18,7 @@ const Introduction: React.FC = () => {
             />
             <h1 className="mt-4 text-3xl font-bold">Hi there! I&apos;m Yash Kapoor</h1>
             <p className="mt-2 text-center max-w-xl mb-4">
-                Software Engineering Graduate
+                Software Engineer
             </p>
 
             <div className="max-w-screen-lg mx-auto flex justify-center space-x-4 mb-4">

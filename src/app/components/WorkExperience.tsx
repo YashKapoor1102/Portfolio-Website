@@ -15,9 +15,27 @@ const WorkExperience: React.FC = () => {
 
     const experiences = [
         {
+            date: 'March 2025 - Present',
+            company: 'Autolux Ltd. O/A Rapid City Transportation',
+            title: 'Software Engineer',
+            skills: ['React', 'React Native', 'Node.js', 
+                'TypeScript', 'JavaScript', 'Express', 'Cascading Style Sheets (CSS)',
+                'Microsoft SQL Server', 'Jest', 'React Testing Library', 'React Native Testing Library', 
+                'CI/CD', 'Palantir Foundry',
+                'Data Modeling', 'Git', 'Docker', 'Kubernetes', 'Linux Virtual Machines', 'External RESTful APIs'
+            ],
+            description: [
+                'Built a full-stack passenger application using React, Node.js, CSS, and Microsoft SQL Server, allowing users to register, manage profiles, and book single or multiple trips. The app includes real-time driver tracking via Google Maps and Geotab APIs, secure Face ID login using WebAuthn, and input validation with backend sanitization. Wrote unit and integration tests to ensure key features worked as expected.',
+                'Designed and implemented an Android kiosk application using React Native, Node.js, Express, and Twilio Voice API that lets visitors at the employee entrance call staff directly by sequentially dialing multiple contacts until someone answers, automating manual reception and reducing response times by up to 50%.',
+                'Built and deployed multiple Node.js microservices that pull data from Microsoft SQL Server to connect different systems securely without exposing direct database access.',
+                'Designed an interactive dashboard in Palantir Foundry by modeling complex one-to-many and many-to-one relationships between claim, trip, and passenger ontologies using the Ontology SDK and Pipeline Builder, and configured a Linux virtual machine with a Foundry agent and PySpark transforms to pull data securely from microservices over VPN.'
+            ],
+            categories: null
+        },
+        {
             date: 'January 2022 - December 2022',
             company: 'Barracuda Networks',
-            title: 'Full Stack Software Engineer Intern',
+            title: 'Full Stack Software Engineer',
             skills: ['TypeScript', 'JavaScript', 'React', 'Redux', 'Node.js', 
                     'Elasticsearch', 'Logstash', 'Kibana', 'Docker', 'Kubernetes', 
                     'Amazon Web Services (AWS)', 'Google Cloud Platform (GCP)',

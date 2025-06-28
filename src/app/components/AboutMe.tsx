@@ -1,20 +1,15 @@
 import React from 'react';
 
 const AboutMe = () => {
-    const content = [
-        "I am a recent software engineering graduate from Carleton University with a passion " +
-        "for creating innovative and user-friendly applications.",
-      
-        "I am skilled in full-stack development with technologies like React, Node.js, Python, " +
-        "Java, C, and C++. I thrive on tackling new challenges and driving positive change. " +
-        "If you'd like to explore some of the projects I have worked on, feel free to check out my GitHub.",
-      
-        "I am committed to continuous learning and eager to expand my skillset. I am actively " +
-        "seeking a full-time position as a software engineer where I can leverage my skills to " +
-        "contribute to exciting projects and innovative solutions.",
-      
-        "Outside of work, I enjoy golf, basketball, traveling, swimming, and kayaking."
-    ];
+  const content = [
+      "I am a software engineer who enjoys building original, user-friendly applications that solve real-world problems.",
+    
+      "I am skilled in full-stack development with technologies like React, Node.js, Python, " +
+      "Java, C, and C++. I thrive on tackling new challenges and driving positive change. " +
+      "If you'd like to explore some of the projects I have worked on, feel free to check out my GitHub.",
+          
+      "Outside of work, I enjoy golf, hiking, basketball, traveling, and kayaking."
+  ];
       
 
   return (
