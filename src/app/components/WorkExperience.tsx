@@ -8,7 +8,9 @@ const WorkExperience: React.FC = () => {
 
   const toggleTab = (tab: string) => {
     setOpenTab((prevTabs) =>
-      prevTabs.includes(tab) ? prevTabs.filter((t) => t !== tab) : [...prevTabs, tab]
+      prevTabs.includes(tab)
+        ? prevTabs.filter((t) => t !== tab)
+        : [...prevTabs, tab]
     );
   };
 
@@ -57,7 +59,7 @@ const WorkExperience: React.FC = () => {
         "Trained and tuned an Azure Document Intelligence model to extract structured invoice fields and added validation rules and rule-based classification to improve data accuracy and reduce manual correction effort.",
         "Developed an Android kiosk application using React Native, Node.js, Express, and the Twilio Voice API to automate employee entrance calling (sequential dialing / fallback until answered), reducing manual reception effort and improving response times by up to 50%.",
         "Wrote unit and integration tests (Jest + Testing Library) and integrated tests into CI/CD to continuously validate critical flows and reduce regressions across releases.",
-        "Designed and deployed multiple Node.js microservices that securely expose curated SQL Server data from SQL Server to internal systems without granting direct database access, improving maintainability and reducing security risk.",
+        "Designed and deployed multiple Node.js microservices that securely expose curated SQL Server data to internal systems without granting direct database access, improving maintainability and reducing security risk.",
         "Designed an interactive dashboard in Palantir Foundry by modeling complex one-to-many and many-to-one relationships between claim, trip, and passenger ontologies using the Ontology SDK and Pipeline Builder, and configured a Linux virtual machine with a Foundry agent and PySpark transforms to pull data securely from microservices over VPN.",
       ],
       categories: null,
@@ -97,7 +99,6 @@ const WorkExperience: React.FC = () => {
           "Engineered and deployed RESTful APIs within a microservices architecture using Docker and Kubernetes, improving system scalability and reducing deployment times by 30%.",
           "Redesigned the status configuration screen in the Customer Security Dashboard to sync Barracuda SKOUT XDR and ConnectWise ticket statuses. Developed the frontend user interface using React and backend logic with HTTP request libraries to automate status updates via the ConnectWise API.",
         ],
-        ...
       },
     },
   ];
@@ -105,8 +106,39 @@ const WorkExperience: React.FC = () => {
   return (
     <section id="WorkExperience" className="py-8 bg-gray-200">
       <div className="container mx-auto px-4">
-        <h1 className="text-center text-4xl font-bold mb-6">Work Experience</h1>
-        ...
+        <h1 className="text-center text-4xl font-bold mb-6">
+          Work Experience
+        </h1>
+
+        <div className="space-y-4 flex flex-col justify-center items-center">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="bg-blue-50 rounded-lg shadow-md p-6 max-w-4xl border border-blue-700"
+            >
+              <span className="text-sm font-normal">{exp.date}</span>
+              <h2 className="text-lg font-bold">{exp.title}</h2>
+              <p className="font-bold text-blue-800">{exp.company}</p>
+
+              <div className="flex flex-wrap gap-2 my-2">
+                {exp.skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <ul className="list-disc pl-5 space-y-1">
+                {exp?.description?.map((desc, i) => (
+                  <li key={i}>{desc}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
